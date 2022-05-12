@@ -172,11 +172,10 @@ body {
     row-gap: 1rem;
   }
 
-  .slider_wrap {
-    border-width: 0.25vh;
-  }
-
   .slider_nav {
     justify-content: center;
+  }
+  .slider_wrap {
+    border-width: 0.25vh;
   }
 }
