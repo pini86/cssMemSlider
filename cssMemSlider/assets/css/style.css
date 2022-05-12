@@ -45,3 +45,39 @@ body {
 .slider input[type="radio"] {
   appearance: none;
 }
+
+.slider_nav {
+  grid-area: controls;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.slider_nav-item {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-image: radial-gradient(circle closest-side at 50% 50%, #18a3dd 50%, transparent 50%); 
+}
+
+.slider_nav-item:hover,
+.slider_nav-item:focus {
+  background-image: radial-gradient(circle closest-side at 50% 50%, white 50%, transparent 50%);
+}
+
+.slider_nav-item:active {
+  background-image: radial-gradient(circle closest-side, black 0.6rem, #18a3dd 0.7rem, black 0.8rem);
+  opacity: 0.5;
+ }
+
+.slider_slide {
+  width: 20%;
+  transition: all 0.5s ease-in-out;
+}
+
+.slider_slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
