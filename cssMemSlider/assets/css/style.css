@@ -121,3 +121,36 @@ body {
 #slide5:checked ~ .slider_inner .slider_nav label:nth-child(5):hover {
   background-image: radial-gradient(circle closest-side, black 0.6rem, white 0.7rem, black 0.8rem);
 }
+
+.slider_text {
+  grid-area: text;
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+}
+
+.text_list {
+  display: flex;
+  width: 500%;
+  list-style: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.text_item {
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: margin-left 0.5s ease-in-out, transform 0.5s 0.3s ease-in-out, opacity 0.5s 0.3s;
+}
+
+#slide1:checked ~ .slider_inner .text_item:nth-child(1),
+#slide2:checked ~ .slider_inner .text_item:nth-child(2),
+#slide3:checked ~ .slider_inner .text_item:nth-child(3),
+#slide4:checked ~ .slider_inner .text_item:nth-child(4),
+#slide5:checked ~ .slider_inner .text_item:nth-child(5) {
+  transform: scale(1);
+  opacity: 1;
+}
