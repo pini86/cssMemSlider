@@ -154,3 +154,29 @@ body {
   transform: scale(1);
   opacity: 1;
 }
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    width: 80vw;
+    height: 70vw;
+    margin: 1vh auto;
+  }
+
+  .slider_inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60vw auto;
+    grid-template-areas:
+      "slides"
+      "controls"
+      "text";
+    row-gap: 1rem;
+  }
+
+  .slider_wrap {
+    border-width: 0.25vh;
+  }
+
+  .slider_nav {
+    justify-content: center;
+  }
+}
